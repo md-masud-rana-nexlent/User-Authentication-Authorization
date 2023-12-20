@@ -4,7 +4,7 @@ const postScheme = z.object({
   title: z.string(),
   description: z.string(),
 });
-type Post = z.infer<typeof postScheme>;
+export type Post = z.infer<typeof postScheme>;
 
 const post = {
   id: 1,
