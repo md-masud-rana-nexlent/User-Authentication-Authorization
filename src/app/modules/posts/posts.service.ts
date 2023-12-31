@@ -1,6 +1,6 @@
-import Post from './posts.model';
+import { Posts } from './posts.model';
 
 export const getPostsFromDB = async () => {
-  const posts = await Post.find();
+  const posts = await Posts.find();
   return posts;
 };
